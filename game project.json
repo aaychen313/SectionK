@@ -5894,6 +5894,24 @@
         "name": "Room_Trap33.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Regular Sword3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Regular Sword3.png\"}",
+        "name": "Regular Sword2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Regular Sword4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Regular Sword3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -7760,7 +7778,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0269425874981444,
+        "zoomFactor": 2.4323477282329122,
         "windowMask": false
       },
       "objectsGroups": [
@@ -7775,6 +7793,15 @@
             },
             {
               "name": "RoomTraps"
+            },
+            {
+              "name": "RoomTraps2"
+            },
+            {
+              "name": "RoomFloor2"
+            },
+            {
+              "name": "Room2"
             }
           ]
         },
@@ -7880,26 +7907,9 @@
           "name": "Player",
           "persistentUuid": "ad19cec5-85af-42c6-a102-0d439a817816",
           "width": 0,
-          "x": 251,
-          "y": 297,
+          "x": 372,
+          "y": 300,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 33,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Sword",
-          "persistentUuid": "bc11f3a9-e5f1-4bda-b04e-8e1941b5103a",
-          "width": 16,
-          "x": 252,
-          "y": 294,
-          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8037,15 +8047,15 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 216,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
           "layer": "",
-          "name": "RoomFloor",
-          "persistentUuid": "d7445878-c956-48a5-a13a-6edf3a574682",
-          "width": 384,
-          "x": 230,
-          "y": 273,
+          "name": "RoomFloor2",
+          "persistentUuid": "a31b13b9-59cc-4743-9784-c9b21c4fe3be",
+          "width": 0,
+          "x": 375,
+          "y": 229,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -8054,24 +8064,35 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
+          "depth": 0,
           "height": 216,
+          "keepRatio": true,
           "layer": "",
-          "name": "Room",
-          "persistentUuid": "6d870fa7-3091-422e-9086-fa8ffe3c07de",
-          "width": 383,
-          "x": 232,
-          "y": 274,
+          "name": "Room2",
+          "persistentUuid": "b826c23e-3776-45ce-8add-ebb3e57a99c5",
+          "width": 384,
+          "x": 375,
+          "y": 229,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "LastOn",
-              "type": "boolean",
-              "value": true
-            }
-          ]
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Sword",
+          "persistentUuid": "a101a2e2-b187-4188-a95c-32deb6e10b9a",
+          "width": 0,
+          "x": 372,
+          "y": 298,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -10030,23 +10051,23 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Regular Sword",
+                      "image": "Regular Sword3",
                       "points": [
                         {
                           "name": "BulletSpawn",
-                          "x": 17,
-                          "y": 21
+                          "x": 17.5,
+                          "y": 21.5
                         }
                       ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 4.5,
+                        "x": 5,
                         "y": 22
                       },
                       "centerPoint": {
                         "automatic": false,
                         "name": "centre",
-                        "x": 4.5,
+                        "x": 5,
                         "y": 22
                       },
                       "customCollisionMask": [
@@ -31423,8 +31444,8 @@
                       "parameters": [
                         "",
                         "Upgrades",
-                        "RoomFloor.X()-64",
-                        "RoomFloor.Y()",
+                        "RoomFloor2.X()-64",
+                        "RoomFloor2.Y()",
                         ""
                       ]
                     },
@@ -31435,8 +31456,8 @@
                       "parameters": [
                         "",
                         "Upgrades",
-                        "RoomFloor.X()+64",
-                        "RoomFloor.Y()",
+                        "RoomFloor2.X()+64",
+                        "RoomFloor2.Y()",
                         ""
                       ]
                     },
@@ -31447,8 +31468,8 @@
                       "parameters": [
                         "",
                         "Upgrades",
-                        "RoomFloor.X()",
-                        "RoomFloor.Y()",
+                        "RoomFloor2.X()",
+                        "RoomFloor2.Y()",
                         ""
                       ]
                     }
@@ -31565,7 +31586,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "RoomFloor.Y()",
+                    "RoomFloor2.Y()",
                     "",
                     ""
                   ]
@@ -31577,7 +31598,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "RoomFloor.X()",
+                    "RoomFloor2.X()",
                     "",
                     ""
                   ]
@@ -31603,7 +31624,7 @@
                     "value": "PickNearest"
                   },
                   "parameters": [
-                    "RoomFloor",
+                    "RoomFloor2",
                     "Player.X()",
                     "Player.Y()",
                     ""
@@ -31618,7 +31639,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "lerp(CameraX(), RoomFloor.X(), 0.05)",
+                    "lerp(CameraX(), RoomFloor2.X(), 0.05)",
                     "",
                     ""
                   ]
@@ -31630,7 +31651,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "lerp(CameraY(), RoomFloor.Y(), 0.05)",
+                    "lerp(CameraY(), RoomFloor2.Y(), 0.05)",
                     "",
                     ""
                   ]
@@ -31655,7 +31676,7 @@
                         "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
-                        "DistanceBetweenPositions(CameraX(), CameraY(), RoomFloor.X(), RoomFloor.Y())",
+                        "DistanceBetweenPositions(CameraX(), CameraY(), RoomFloor2.X(), RoomFloor2.Y())",
                         "<",
                         "5"
                       ]
@@ -31694,7 +31715,7 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "DistanceBetweenPositions(CameraX(), CameraY(), RoomFloor.X(), RoomFloor.Y())",
+                    "DistanceBetweenPositions(CameraX(), CameraY(), RoomFloor2.X(), RoomFloor2.Y())",
                     ">=",
                     "5"
                   ]
@@ -31840,7 +31861,7 @@
                     "value": "PickNearest"
                   },
                   "parameters": [
-                    "RoomFloor",
+                    "RoomFloor2",
                     "Player.X()",
                     "Player.Y()",
                     ""
@@ -31852,7 +31873,7 @@
                     "value": "CollisionPoint"
                   },
                   "parameters": [
-                    "RoomFloor",
+                    "RoomFloor2",
                     "Player.X()",
                     "Player.Y()"
                   ]
@@ -31898,7 +31919,7 @@
                       "parameters": [
                         "Player",
                         "<=",
-                        "RoomFloor.Y() - 50"
+                        "RoomFloor2.Y() - 50"
                       ]
                     }
                   ],
@@ -31920,7 +31941,7 @@
                       "parameters": [
                         "NewRoomDeltaY",
                         "=",
-                        "-RoomFloor.Height()"
+                        "-RoomFloor2.Height()"
                       ]
                     },
                     {
@@ -31956,7 +31977,7 @@
                       "parameters": [
                         "Player",
                         ">=",
-                        "RoomFloor.Y() + 50"
+                        "RoomFloor2.Y() + 50"
                       ]
                     }
                   ],
@@ -31978,7 +31999,7 @@
                       "parameters": [
                         "NewRoomDeltaY",
                         "=",
-                        "RoomFloor.Height()"
+                        "RoomFloor2.Height()"
                       ]
                     },
                     {
@@ -32014,7 +32035,7 @@
                       "parameters": [
                         "Player",
                         "<=",
-                        "RoomFloor.X() - 50"
+                        "RoomFloor2.X() - 50"
                       ]
                     }
                   ],
@@ -32026,7 +32047,7 @@
                       "parameters": [
                         "NewRoomDeltaX",
                         "=",
-                        "-RoomFloor.Width()"
+                        "-RoomFloor2.Width()"
                       ]
                     },
                     {
@@ -32072,7 +32093,7 @@
                       "parameters": [
                         "Player",
                         ">=",
-                        "RoomFloor.X() + 50"
+                        "RoomFloor2.X() + 50"
                       ]
                     }
                   ],
@@ -32084,7 +32105,7 @@
                       "parameters": [
                         "NewRoomDeltaX",
                         "=",
-                        "RoomFloor.Width()"
+                        "RoomFloor2.Width()"
                       ]
                     },
                     {
@@ -32130,9 +32151,9 @@
                       },
                       "parameters": [
                         "",
-                        "Room",
-                        "RoomFloor.X() + NewRoomDeltaX",
-                        "RoomFloor.Y() + NewRoomDeltaY",
+                        "Room2",
+                        "RoomFloor2.X() + NewRoomDeltaX",
+                        "RoomFloor2.Y() + NewRoomDeltaY",
                         ""
                       ]
                     },
@@ -32142,7 +32163,7 @@
                       },
                       "parameters": [
                         "",
-                        "RoomFloor",
+                        "RoomFloor2",
                         "Room.X()",
                         "Room.Y()",
                         ""
@@ -32154,7 +32175,7 @@
                       },
                       "parameters": [
                         "",
-                        "RoomTraps",
+                        "RoomTraps2",
                         "Room.X()",
                         "Room.Y()",
                         ""
@@ -32166,7 +32187,7 @@
                       },
                       "parameters": [
                         "",
-                        "RoomDoors",
+                        "RoomDoors2",
                         "Room.X()",
                         "Room.Y()",
                         ""
@@ -32177,7 +32198,7 @@
                         "value": "ChangePlan"
                       },
                       "parameters": [
-                        "Room",
+                        "Room2",
                         "=",
                         "Room.Y() - 100"
                       ]
@@ -32187,7 +32208,7 @@
                         "value": "ChangePlan"
                       },
                       "parameters": [
-                        "RoomDoors",
+                        "RoomDoors2",
                         "=",
                         "Room.Y() - 99"
                       ]
@@ -32202,7 +32223,7 @@
                             "value": "PickNearest"
                           },
                           "parameters": [
-                            "RoomFloor",
+                            "RoomFloor2",
                             "Player.X()",
                             "Player.Y()",
                             ""
@@ -32215,7 +32236,7 @@
                             "value": "AnimatableCapability::AnimatableBehavior::SetName"
                           },
                           "parameters": [
-                            "Room",
+                            "Room2",
                             "Animation",
                             "=",
                             "NewRoomAnimation"
@@ -32226,7 +32247,7 @@
                             "value": "AnimatableCapability::AnimatableBehavior::SetName"
                           },
                           "parameters": [
-                            "RoomDoors",
+                            "RoomDoors2",
                             "Animation",
                             "=",
                             "NewRoomAnimation"
@@ -32237,7 +32258,7 @@
                             "value": "AnimatableCapability::AnimatableBehavior::SetName"
                           },
                           "parameters": [
-                            "RoomFloor",
+                            "RoomFloor2",
                             "Animation",
                             "=",
                             "NewRoomAnimation"
@@ -32253,7 +32274,7 @@
                             "value": "AnimatableCapability::AnimatableBehavior::Index"
                           },
                           "parameters": [
-                            "RoomTraps",
+                            "RoomTraps2",
                             "Animation",
                             ">=",
                             "3"
@@ -32264,7 +32285,7 @@
                             "value": "AnimatableCapability::AnimatableBehavior::Index"
                           },
                           "parameters": [
-                            "RoomTraps",
+                            "RoomTraps2",
                             "Animation",
                             "<=",
                             "4"
@@ -32279,8 +32300,8 @@
                           "parameters": [
                             "",
                             "Upgrades",
-                            "RoomTraps.X()",
-                            "RoomTraps.Y()",
+                            "RoomTraps2.X()",
+                            "RoomTraps2.Y()",
                             ""
                           ]
                         },
@@ -32353,7 +32374,7 @@
                       },
                       "parameters": [
                         "",
-                        "RoomFloor"
+                        "RoomFloor2"
                       ]
                     },
                     {
@@ -32361,7 +32382,7 @@
                         "value": "PickNearest"
                       },
                       "parameters": [
-                        "RoomFloor",
+                        "RoomFloor2",
                         "Player.X()",
                         "Player.Y()",
                         ""
@@ -32419,8 +32440,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32448,8 +32469,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32477,8 +32498,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             },
@@ -32489,8 +32510,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32536,8 +32557,8 @@
                               "parameters": [
                                 "",
                                 "Imp",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             },
@@ -32548,8 +32569,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             },
@@ -32560,8 +32581,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32589,8 +32610,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             },
@@ -32601,8 +32622,8 @@
                               "parameters": [
                                 "",
                                 "Goblin",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32630,8 +32651,8 @@
                               "parameters": [
                                 "",
                                 "Imp",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32659,8 +32680,8 @@
                               "parameters": [
                                 "",
                                 "Imp",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             },
@@ -32671,8 +32692,8 @@
                               "parameters": [
                                 "",
                                 "Imp",
-                                "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                                "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                                "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                                "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                                 ""
                               ]
                             }
@@ -32702,8 +32723,8 @@
                           "parameters": [
                             "",
                             "Imp",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         },
@@ -32714,8 +32735,8 @@
                           "parameters": [
                             "",
                             "Goblin",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         },
@@ -32726,8 +32747,8 @@
                           "parameters": [
                             "",
                             "Necromancer",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         }
@@ -32755,8 +32776,8 @@
                           "parameters": [
                             "",
                             "Imp",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         },
@@ -32767,8 +32788,8 @@
                           "parameters": [
                             "",
                             "Goblin",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         }
@@ -32796,8 +32817,8 @@
                           "parameters": [
                             "",
                             "Necromancer",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         }
@@ -32825,8 +32846,8 @@
                           "parameters": [
                             "",
                             "Necromancer",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         },
@@ -32837,8 +32858,8 @@
                           "parameters": [
                             "",
                             "Necromancer",
-                            "RandomWithStep((RoomFloor.X() - 120), (RoomFloor.X() + 120), 60)",
-                            "RandomWithStep((RoomFloor.Y() - 50), (RoomFloor.Y() + 50), 22)",
+                            "RandomWithStep((RoomFloor2.X() - 120), (RoomFloor2.X() + 120), 60)",
+                            "RandomWithStep((RoomFloor2.Y() - 50), (RoomFloor2.Y() + 50), 22)",
                             ""
                           ]
                         }
@@ -32947,7 +32968,7 @@
                                 "value": "PosX"
                               },
                               "parameters": [
-                                "RoomTraps",
+                                "RoomTraps2",
                                 ">",
                                 "Player.X()+260"
                               ]
@@ -32957,7 +32978,7 @@
                                 "value": "PosX"
                               },
                               "parameters": [
-                                "RoomTraps",
+                                "RoomTraps2",
                                 "<",
                                 "Player.X()-260"
                               ]
@@ -32967,7 +32988,7 @@
                                 "value": "PosY"
                               },
                               "parameters": [
-                                "RoomTraps",
+                                "RoomTraps2",
                                 "<",
                                 "Player.X()-167"
                               ]
@@ -32977,7 +32998,7 @@
                                 "value": "PosY"
                               },
                               "parameters": [
-                                "RoomTraps",
+                                "RoomTraps2",
                                 ">",
                                 "Player.X()+167"
                               ]
@@ -32991,7 +33012,7 @@
                             "value": "Delete"
                           },
                           "parameters": [
-                            "RoomTraps",
+                            "RoomTraps2",
                             ""
                           ]
                         }
@@ -33011,7 +33032,7 @@
                                 "value": "PosX"
                               },
                               "parameters": [
-                                "Room",
+                                "Room2",
                                 ">",
                                 "Player.X()+260"
                               ]
@@ -33021,7 +33042,7 @@
                                 "value": "PosX"
                               },
                               "parameters": [
-                                "Room",
+                                "Room2",
                                 "<",
                                 "Player.X()-260"
                               ]
@@ -33031,7 +33052,7 @@
                                 "value": "PosY"
                               },
                               "parameters": [
-                                "Room",
+                                "Room2",
                                 "<",
                                 "Player.X()-167"
                               ]
@@ -33041,7 +33062,7 @@
                                 "value": "PosY"
                               },
                               "parameters": [
-                                "Room",
+                                "Room2",
                                 ">",
                                 "Player.X()+167"
                               ]
@@ -33055,7 +33076,7 @@
                             "value": "Delete"
                           },
                           "parameters": [
-                            "Room",
+                            "Room2",
                             ""
                           ]
                         }
@@ -33075,7 +33096,7 @@
                                 "value": "PosX"
                               },
                               "parameters": [
-                                "RoomFloor",
+                                "RoomFloor2",
                                 ">",
                                 "Player.X()+260"
                               ]
@@ -33085,7 +33106,7 @@
                                 "value": "PosX"
                               },
                               "parameters": [
-                                "RoomFloor",
+                                "RoomFloor2",
                                 "<",
                                 "Player.X()-260"
                               ]
@@ -33095,7 +33116,7 @@
                                 "value": "PosY"
                               },
                               "parameters": [
-                                "RoomFloor",
+                                "RoomFloor2",
                                 "<",
                                 "Player.X()-167"
                               ]
@@ -33105,7 +33126,7 @@
                                 "value": "PosY"
                               },
                               "parameters": [
-                                "RoomFloor",
+                                "RoomFloor2",
                                 ">",
                                 "Player.X()+167"
                               ]
@@ -33119,7 +33140,7 @@
                             "value": "Delete"
                           },
                           "parameters": [
-                            "RoomFloor",
+                            "RoomFloor2",
                             ""
                           ]
                         }
@@ -33154,7 +33175,7 @@
                         "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                       },
                       "parameters": [
-                        "RoomDoors",
+                        "RoomDoors2",
                         "Tween",
                         "\"FadeOut\"",
                         "0",
@@ -33215,7 +33236,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::ForEach",
-              "object": "RoomFloor",
+              "object": "RoomFloor2",
               "conditions": [],
               "actions": [
                 {
@@ -33223,16 +33244,16 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "RoomFloor",
+                    "RoomFloor2",
                     "=",
-                    "RoomFloor.Y() - 3000"
+                    "RoomFloor2.Y() - 3000"
                   ]
                 }
               ]
             },
             {
               "type": "BuiltinCommonInstructions::ForEach",
-              "object": "RoomTraps",
+              "object": "RoomTraps2",
               "conditions": [],
               "actions": [
                 {
@@ -33240,9 +33261,9 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "RoomTraps",
+                    "RoomTraps2",
                     "=",
-                    "RoomFloor.Y() - 2000"
+                    "RoomFloor2.Y() - 2000"
                   ]
                 }
               ]
@@ -33269,7 +33290,7 @@
                   },
                   "parameters": [
                     "Player",
-                    "Room",
+                    "Room2",
                     ""
                   ]
                 },
@@ -33279,7 +33300,7 @@
                   },
                   "parameters": [
                     "Player",
-                    "RoomDoors",
+                    "RoomDoors2",
                     ""
                   ]
                 }
@@ -33970,7 +33991,6 @@
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
-                      "folded": true,
                       "name": "WASD",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
@@ -34215,7 +34235,6 @@
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
-                      "folded": true,
                       "name": "Sword",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
@@ -34419,7 +34438,7 @@
                                   },
                                   "parameters": [
                                     "Bullet",
-                                    "Room",
+                                    "Room2",
                                     "",
                                     "",
                                     ""
@@ -34431,7 +34450,7 @@
                                   },
                                   "parameters": [
                                     "Bullet",
-                                    "RoomDoors",
+                                    "RoomDoors2",
                                     "",
                                     "",
                                     ""
@@ -34495,7 +34514,7 @@
                             "value": "CollisionNP"
                           },
                           "parameters": [
-                            "RoomTraps",
+                            "RoomTraps2",
                             "Player",
                             "",
                             "",
@@ -34698,7 +34717,7 @@
                   },
                   "parameters": [
                     "Enemies",
-                    "Room",
+                    "Room2",
                     ""
                   ]
                 },
@@ -34708,7 +34727,7 @@
                   },
                   "parameters": [
                     "Enemies",
-                    "RoomTraps",
+                    "RoomTraps2",
                     ""
                   ]
                 }
@@ -35098,7 +35117,7 @@
                           },
                           "parameters": [
                             "EnemyOrb",
-                            "Room",
+                            "Room2",
                             "",
                             "",
                             ""
@@ -35110,7 +35129,7 @@
                           },
                           "parameters": [
                             "EnemyOrb",
-                            "RoomDoors",
+                            "RoomDoors2",
                             "",
                             "",
                             ""
