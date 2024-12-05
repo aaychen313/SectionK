@@ -6663,7 +6663,7 @@
           "height": 448,
           "keepRatio": true,
           "layer": "",
-          "name": "Floor",
+          "name": "Floors",
           "persistentUuid": "f4ecb93b-d2aa-4382-bf56-301bcffae284",
           "width": 736,
           "x": 0,
@@ -6680,7 +6680,7 @@
           "height": 448,
           "keepRatio": true,
           "layer": "",
-          "name": "Wall",
+          "name": "Walls",
           "persistentUuid": "87ec3500-c998-4450-b90a-f1d686ba5312",
           "width": 736,
           "x": 0,
@@ -6697,7 +6697,7 @@
           "height": 448,
           "keepRatio": true,
           "layer": "",
-          "name": "Wall",
+          "name": "Walls",
           "persistentUuid": "6eb02530-b7ad-4ddf-afdd-d5301cc2c23c",
           "width": 736,
           "x": 1408,
@@ -6714,7 +6714,7 @@
           "height": 448,
           "keepRatio": true,
           "layer": "",
-          "name": "Floor",
+          "name": "Floors",
           "persistentUuid": "45338d82-1897-4fc6-a7bf-55bff8ac95aa",
           "width": 736,
           "x": 1408,
@@ -7551,7 +7551,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Floor",
+          "name": "Floors",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -7611,7 +7611,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Wall",
+          "name": "Walls",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8100,13 +8100,13 @@
             "objectName": "NewTiledSprite"
           },
           {
-            "objectName": "Floor"
+            "objectName": "Floors"
           },
           {
             "objectName": "WoodBackground"
           },
           {
-            "objectName": "Wall"
+            "objectName": "Walls"
           },
           {
             "objectName": "KnightMale"
@@ -9089,9 +9089,7 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
-          "content": {},
-          "childrenContent": {}
+          "behaviors": []
         },
         {
           "assetStoreId": "",
@@ -9110,9 +9108,7 @@
               "name": "Tween",
               "type": "Tween::TweenBehavior"
             }
-          ],
-          "content": {},
-          "childrenContent": {}
+          ]
         },
         {
           "assetStoreId": "",
@@ -9126,9 +9122,7 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
-          "content": {},
-          "childrenContent": {}
+          "behaviors": []
         },
         {
           "assetStoreId": "",
@@ -9136,9 +9130,7 @@
           "type": "UntitledExtension::MyObject",
           "variables": [],
           "effects": [],
-          "behaviors": [],
-          "content": {},
-          "childrenContent": {}
+          "behaviors": []
         },
         {
           "adaptCollisionMaskAutomatically": true,
